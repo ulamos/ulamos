@@ -4,13 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    
-    <title>Montessory Gallery</title>
-    
+
+    <title>Gallery</title>
+
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="colorbox.css" />
-    <script src="../jquery.colorbox.js"></script>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="assets/js/jquery.bxslider.js"></script>
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/jquery.bxslider.css" rel="stylesheet" />
+
+    <script src="assets/js/js.js"></script>
+
 
 </head>
 
@@ -32,13 +41,13 @@
         <div class="">
             <nav class="nav">
                 <!--<button id="nav__toggle" class="nav__toggle"></button>-->
-               <ul class="nav__items">
+                <ul class="nav__items">
                     <li class="nav__item">
                         <a href="index.html" target="_self" class="nav__link"><img src="assets/img/home.png" id=1></img>
                         </a>
                     </li>
                     <li class="nav__item"><a href="index1_about.html" target="_self" class="nav__link">О нас</a>
-                        
+
                         <ul class="flyout" class="nav1__item">
                             <li><a href="index1_1_teachers.html" target="_self" class="nav1__link">Педагоги </a></li>
                             <li><a href="index1_2_gallery.html" target="_self" class="nav1__link">Фото/Видео </a></li>
@@ -46,7 +55,7 @@
                         </ul>
                     </li>
                     <li class="nav__item active"><a href="index2_why.html" target="_self" class="nav__link">Почему Монтессори?</a>
-                        
+
                         <ul class="flyout" class="nav2__item">
                             <li><a href="index2_1_method.html" target="_self" class="nav1__link">О методе </a></li>
                             <li><a href="index2_2_famous.html" target="_self" class="nav1__link">Знаменитые выпускники </a></li>
@@ -71,59 +80,57 @@
                         <!-- Фотообзор -->
 
                         <div class="foto-gallery">
-                            <h1>Фотообзор</h1>
-
+                            <h1 style: text-align="center">Фотообзор</h1>
+                            <h2>Малыши 0-3 </h2>
                             <div class="post_foto">
-                                <h2><a href="">Малыши 0-3 </a></h2>
+
                                 <div id='foto-baby' class=''>
-                                    <img src="assets/img/fotoobzor/0-3/1.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/2.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/3.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/4.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/5.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/6.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/7.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/8.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/0-3/9.jpg" alt="">
+                                    <img src="assets/img/fotoobzor/0-3/1.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/2.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/3.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/4.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/5.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/6.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/7.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/0-3/8.jpg" alt="фото Малыши 0-3" tabindex="0" />
+                                    <!--<img src="assets/img/fotoobzor/0-3/9.jpg" alt="фото Малыши 0-3" tabindex="0" />-->
                                 </div>
 
-                                <p> <a href="" class="more-link"><span class="more-gallery">...</span></a></p>
                                 <div class="clear"></div>
                             </div>
 
-
+                            <h2>Детский сад 3-6</h2>
                             <div class="post_foto">
-                                <h2><a href="">Детский сад 3-6</a></h2>
+
                                 <div id='foto-toddler' class=''>
-                                    <img src="assets/img/fotoobzor/3-6/1.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/2.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/3.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/4.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/5.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/6.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/7.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/8.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/3-6/9.jpg" alt="">
+                                    <img src="assets/img/fotoobzor/3-6/1.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/2.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/3.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/4.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/5.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/6.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <!--<img src="assets/img/fotoobzor/3-6/7.jpg" alt="фото Детский сад 3-6" tabindex="0" />-->
+                                    <img src="assets/img/fotoobzor/3-6/8.jpg" alt="фото Детский сад 3-6" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/3-6/9.jpg" alt="фото Детский сад 3-6" tabindex="0" />
                                 </div>
 
-                                <p> <a href="" class="more-link"><span class="more-gallery">...</span></a></p>
                                 <div class="clear"></div>
                             </div>
-
+                            
+                            <h2>Начальная школа 6-12</h2>
                             <div class="post_foto">
-                                <h2><a href="">Начальная школа 6-12</a></h2>
+
                                 <div id='foto-school' class=''>
-                                    <img src="assets/img/fotoobzor/6-12/1.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/2.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/3.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/4.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/5.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/6.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/7.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/8.jpg" alt="">
-                                    <img src="assets/img/fotoobzor/6-12/9.jpg" alt="">
+                                    <img src="assets/img/fotoobzor/6-12/1.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/2.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/3.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/4.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/5.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/6.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/7.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <img src="assets/img/fotoobzor/6-12/8.jpg" alt="фото Начальная школа 6-12" tabindex="0" />
+                                    <!--<img src="assets/img/fotoobzor/6-12/9.jpg" alt="фото Начальная школа 6-12" tabindex="0" />-->
                                 </div>
-                                <p> <a href="" class="more-link"><span class="more-gallery">...</span></a></p>
                                 <div class="clear"></div>
                             </div>
                         </div>
@@ -136,7 +143,7 @@
                         <h4></h4>
                     </div>
                 </div>
-           <footer class="A__footer">
+                <footer class="A__footer">
                     <div class="container_4" id="footerBlock">
 
                         <div class="social-links">
@@ -145,19 +152,19 @@
                                     <a href="https://Facebook.com/..." target="_blank" class="icon_facebook" title="Наша страница в Facebook">
                                         <img src="assets/img/social_netw/facebook-logo-button (1).png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc на Facebook  </span>
+                                    <span></span>
                                 </div>
                                 <div id="vk">
                                     <a href="http://vk.com/..." target="_blank" class="icon_ vk" title="Наша страница в Контакте">
                                         <img src="assets/img/social_netw/vk-social-logotype.png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc в Контакте  </span>
+                                    <span></span>
                                 </div>
                                 <div id="ok">
                                     <a href="https://ok.ru/..." target="_blank" class="icon_ ok" title="Наша страница в Одноклассниках">
                                         <img src="assets/img/social_netw/odnoklassniki-logo.png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc в Одноклассниках  </span>
+                                    <span></span>
                                 </div>
                             </div>
                         </div>

@@ -8,9 +8,17 @@
     <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="colorbox.css" />
-    <script src="../jquery.colorbox.js"></script>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+    <script src="assets/js/jquery.bxslider.js"></script>
+    
+    <!-- bxSlider CSS file -->
+    <link href="assets/jquery.bxslider.css" rel="stylesheet" />
+
+    <script src="assets/js/js.js"></script>
 
 </head>
 
@@ -38,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav__item"><a href="index1_about.html" target="_self" class="nav__link">О нас</a>
-                        
+
                         <ul class="flyout" class="nav1__item">
                             <li><a href="index1_1_teachers.html" target="_self" class="nav1__link">Педагоги </a></li>
                             <li><a href="index1_2_gallery.html" target="_self" class="nav1__link">Фото/Видео </a></li>
@@ -46,7 +54,7 @@
                         </ul>
                     </li>
                     <li class="nav__item active"><a href="index2_why.html" target="_self" class="nav__link">Почему Монтессори?</a>
-                        
+
                         <ul class="flyout" class="nav2__item">
                             <li><a href="index2_1_method.html" target="_self" class="nav1__link">О методе </a></li>
                             <li><a href="index2_2_famous.html" target="_self" class="nav1__link">Знаменитые выпускники </a></li>
@@ -70,94 +78,16 @@
 
                         <!--слайдер-->
                         <div id="slider">
-                            <input type="radio" name="slider1" id="slide_1" checked="checked">
-                            <input type="radio" name="slider1" id="slide_2">
-                            <input type="radio" name="slider1" id="slide_3">
-                            <input type="radio" name="slider1" id="slide_4">
-                            <input type="radio" name="slider1" id="slide_5">
-                            <input type="radio" name="slider1" id="slide_6">
-                            <input type="radio" name="slider1" id="slide_7">
-                            <input type="radio" name="slider1" id="slide_8">
-                            <!--всем input нужен один общий name чт сгруппировать-->
-                            <div id="slides">
-                                <div id="overflow">
-                                    <div class="inner">
-
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide1.jpg" alt="">
-                                            <div class="slider_text">
-                                                Исследовать
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide2.jpg" alt="">
-                                            <div class="slider_text">
-                                                Играть
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide3.jpg" alt="">
-                                            <div class="slider_text">
-                                                Открывать
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide4.jpg" alt="">
-                                            <div class="slider_text">
-                                                Творить
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide5.jpg" alt="">
-                                            <div class="slider_text">
-                                                Узнавать
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide6.jpg" alt="">
-                                            <div class="slider_text">
-                                                Удивляться
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide7.jpg" alt="">
-                                            <div class="slider_text">
-                                                Уметь
-                                            </div>
-                                        </div>
-                                        <div class="page">
-                                            <img src="assets/img/home_slides/Slide8.jpg" alt="">
-                                            <div class="slider_text">
-                                                Радоваться
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="controls">
-                                <!--наши стрелки-->
-                                <label for="slide_1"></label>
-                                <label for="slide_2"></label>
-                                <label for="slide_3"></label>
-                                <label for="slide_4"></label>
-                                <label for="slide_5"></label>
-                                <label for="slide_6"></label>
-                                <label for="slide_7"></label>
-                                <label for="slide_8"></label>
-                            </div>
-
-                            <div id="active">
-                                <!--наши кнопочки-точки-->
-                                <label for="slide_1"></label>
-                                <label for="slide_2"></label>
-                                <label for="slide_3"></label>
-                                <label for="slide_4"></label>
-                                <label for="slide_5"></label>
-                                <label for="slide_6"></label>
-                                <label for="slide_7"></label>
-                                <label for="slide_8"></label>
-                            </div>
+                            <ul class="bxslider">
+                                <li><img src="assets/img/home_slides/Slide1.jpg" title="Исследовать" /></li>
+                                <li><img src="assets/img/home_slides/Slide2.jpg" title="Играть" /></li>
+                                <li><img src="assets/img/home_slides/Slide3.jpg" title="Открывать" /></li>
+                                <li><img src="assets/img/home_slides/Slide4.jpg" title="Творить" /></li>
+                                <li><img src="assets/img/home_slides/Slide5.jpg" title="Узнавать" /></li>
+                                <li><img src="assets/img/home_slides/Slide6.jpg" title="Удивляться" /></li>
+                                <li><img src="assets/img/home_slides/Slide7.jpg" title="Уметь" /></li>
+                                <li><img src="assets/img/home_slides/Slide8.jpg" title="Радоваться" /></li>
+                            </ul>
 
                         </div>
 
@@ -166,7 +96,7 @@
                         <div class="home_item item1">
                             <h2>Система Монтессори – фундамент обучения.</h2>
                             <img src="assets/img/home/teacher.jpg"></img>
-                            
+
                             <p>Что общего между нобелевским лауреатом по литературе, президентом США с высочайшим IQ, оскароносным актёром, человеком, сформировавшим облик современного компьютерного мира, и создателем самого знаменитого интернет-поисковика
                                 на планете? Габриель Гарсиа Маркес, Билл Клинтон, Джордж Клуни, Билл Гейтс, Сергей Брин и многие другие выдающиеся личности в детстве воспитывались по системе Монтессори. Если Вы ищете систему, направленную на выявление
                                 и развитие способностей Вашего ребёнка, то, вероятно, встретите много, называющих себя таковыми, но награждена Нобелевской премией только одна из них &ndash; педагогика Монтессори.</p>
@@ -175,7 +105,7 @@
                         <div class="home_item item2">
                             <h2>Раскрытие творческого потенциала.</h2>
                             <img src="assets/img/home/art.jpg"></img>
-                            
+
                             <p>Наше стремление пробудить в каждом ребёнке гения воплощается не только в использовании системы Монтессори. Подход Clever Kids к обучению детей более всеобъемлющий: мы сочетаем целый комплекс средств и создаем все необходимые
                                 условия для раскрытия творческого потенциала и разнопланового развития детей.</p>
                             <p>Для развития креативности и нестандартного мышления мы используем разнообразные техники, среди которых дыхательные и физические упражнения, практики, стимулирующие работу обоих полушарий мозга, система творческих заданий в
@@ -214,19 +144,19 @@
                                     <a href="https://Facebook.com/..." target="_blank" class="icon_facebook" title="Наша страница в Facebook">
                                         <img src="assets/img/social_netw/facebook-logo-button (1).png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc на Facebook  </span>
+                                   
                                 </div>
                                 <div id="vk">
                                     <a href="http://vk.com/..." target="_blank" class="icon_ vk" title="Наша страница в Контакте">
                                         <img src="assets/img/social_netw/vk-social-logotype.png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc в Контакте  </span>
+                                 
                                 </div>
                                 <div id="ok">
                                     <a href="https://ok.ru/..." target="_blank" class="icon_ ok" title="Наша страница в Одноклассниках">
                                         <img src="assets/img/social_netw/odnoklassniki-logo.png" alt=" "></img>
                                     </a>
-                                    <span>найдите наc в Одноклассниках  </span>
+                                    
                                 </div>
                             </div>
                         </div>
